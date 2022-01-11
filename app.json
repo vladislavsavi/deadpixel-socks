@@ -1,0 +1,33 @@
+{
+  "name": "Shadowsocks+V2Ray-plugin Rapid deployment",
+  "description": "Deploy Shadowsocks+V2Ray-plugin to Heroku.",
+  "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
+  "env": {
+     "ENCRYPT": {
+      "description": "Shadowsocks encryption method.",
+      "value": "chacha20-ietf-poly1305"
+    },
+     "PASSWORD": {
+      "description": "The password of shadowsocks, you can use uuid as the password (http://www.uuid.online/ online generation)",
+      "value": "5c301bb8-6c77-41a0-a606-4ba11bbab084"
+    },
+
+     "V2_Path": {
+      "description": "V2Ray handler path. Auto-generated with some secret value.",
+      "generator": "secret"
+    },
+
+     "AppName": {
+      "description": "App Name filled in at the top (or even full domain if there is a custom one) to generate the configuration and QR code. If you don’t want to generate it, enter no",
+      "value": "no"
+    },
+
+    "QR_Path": {
+       "description": "QR code and configuration link path, the default qr_img, you can also use uuid for confidentiality, but it cannot be the same as V2_Path. If the AppName variable is no, this variable has no effect",
+       "value": "/qr"
+     }
+  },
+  "website": "",
+  "repository": "",
+  "stack": "container"
+ }
