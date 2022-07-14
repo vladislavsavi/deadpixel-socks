@@ -1,7 +1,7 @@
 {
-  "name": "Shadowsocks+V2Ray-plugin Rapid deployment",
-  "description": "Deploy Shadowsocks+V2Ray-plugin to Heroku.",
-  "keywords": ["V2ray", "Shadowsocks", "V2Ray-plugin"],
+  "name": "deadPixel helper",
+  "description": "Deploy deadPixel helper to Heroku.",
+  "keywords": ["V2ray", "deadPixel helper", "V2Ray-plugin"],
   "env": {
      "ENCRYPT": {
       "description": "Shadowsocks encryption method.",
